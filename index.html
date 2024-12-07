@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Travelia</title>
+    <style type="text/tailwindcss">
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body {
+            background: hsl(0, 100%, 98%);
+            font-family: 'poppins', sans-serif;
+            cursor: pointer;
+        }
+
+        #btn1 {
+            padding: 10px 28px;
+            background: #1743e3;
+            border: 2px solid #1743e3;
+            border-radius: 200px;
+            font-size: 16px;
+            color: #eaeaea;
+            letter-spacing: 1px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 5s;
+        }
+
+        .image-item {
+            animation: up-and-down 3s ease-in-out infinite;
+
+        }
+
+        @keyframes up-and-down {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px); /* Moves the image up */
+            }
+            100% {
+                transform: translateY(0); /* Returns to original position */
+            }
+
+            
+        }
+
+        /* Apply animation to image items */
+            .image-item-animate {
+            animation: slide-from-left 0.6s ease-out forwards; /* Apply the animation */
+        }
+
+
+        @keyframes slide-from-left {
+            0% {
+                transform: translateX(-100%); /* Starts from the left */
+                opacity: 0; /* Fully transparent */
+            }
+            100% {
+                transform: translateX(0); /* Ends at the normal position */
+                opacity: 1; /* Fully visible */
+            }
+        }
+      </style>
+</head>
+
+<body>
+    <header class="fixed w-full top-0 left-0 z-50">
+        <nav class="flex items-center justify-between bg-white px-[60px] py-[40px]">
+            <img src="../Velot/Image-2/logo (1).svg" alt="logo" id="logo">
+
+            <div class="flex items-center justify-center duration-300">
+                <ul class="flex flex-col items-center gap-8 lg:flex-row text-xs	">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <a href="#">Login</a>
+            <button id="btn1">Sign Up</button>
+
+        </nav>
+    </header>
+
+    <section>
+        <div class="flex mt-32 w-[80%] m-auto">
+            <div class="mt-[100px] max-w-[500px] ">
+                <h3 class="flex px-[16px] py-[16px]  rounded-2xl">Explore the world <img
+                        src="../Velot/Image-2/title-icon.svg" class="" alt=""></h3>
+                <h1 class="text-[2.5rem] font-bold ">It's a Big World Out There, Go Explore</h1>
+                <p class="mt-[15px] mx-[0] mb-[30px] text-sm">We always make our customer happy by providing as many
+                    choices as possible</p>
+            </div>
+
+            <div class="">
+                <img src="../Velot/Image-2/hero-banner.png" class="w-[40vw]" alt="hero" id="banner">
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="p-[3.5em]">
+            <p class=" text-sm opacity-30 mb-[20px]">WHAT WE SERVE</p>
+            <h1 class="mb-[20px] text-[2.5rem] font-bold">Top Values For You</h1>
+            <p class="text-xs opacity-60">Try a variety of benefits when using our services.</p>
+        </div>
+    </section>
+
+    <section class="mt-6 w-[90%] m-">
+        <div class="grid grid-cols-3 gap-">
+            <div class="bg-[#FACFCE] mt-[20px] m-auto p-[20px] rounded-xl">
+                <img src="../Velot/Image-2/service-icon-1.svg" class="w-[70px] mb-[5px]" alt="">
+                <p class="text-sm font-semibold mb-[10px]">Lots Of Choices</p>
+                <p class="text-xs opacity-60">Total 460+ destinations that we work with.</p>
+            </div>
+
+            <div class="bg-[#FACFCE] mt-[20px] m-auto p-[20px] rounded-xl">
+                <img src="../Velot/Image-2/service-icon-2.svg" class="w-[70px] mb-[5px]" alt="">
+                <p class="text-sm font-semibold mb-[10px]">Best Tour Guide</p>
+                <p class="text-xs opacity-60">Our tour guide with 15+ years of experience.</p>
+            </div>
+
+            <div class="bg-[#F2E7DC] mt-[20px] m-auto p-[20px] pr-[120px] rounded-xl">
+                <img src="../Velot/Image-2/service-icon-3.svg" class="w-[70px] mb-[5px]" alt="">
+                <p class="text-sm font-semibold mb-[10px]">Easy Booking</p>
+                <p class="text-xs opacity-60">With an easy and fast ticket purchase process.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="mt-10">
+        <div class="m-auto text-center">
+            <p class="text-xs mb-[10px] opacity-60">Top destination</p>
+            <h1 class="text-[2.5rem] font-semibold">Explore Top Destination</h1>
+        </div>
+
+        <div class="mt-6 w-[90%] mx-auto">
+            <div class="grid grid-cols-3 gap-6">
+                <div class="image-item">
+                    <img src="../Velot/Image-2/destination-1.jpg" class="w-[350px] h-[350px] rounded-2xl"
+                        alt="destination">
+                    <p class="text-base font-sans font-semibold opacity-90 hover:text-[#03258C]">Enjoy the Beauty of the
+                        del Pincio</p>
+                    <p class="text-xs opacity-70 hover:text-[#03258C]">Rome, Italy</p>
+                </div>
+
+                <div class="image-item">
+                    <img src="../Velot/Image-2/destination-2.jpg" class="w-[350px] h-[350px] rounded-2xl"
+                        alt="destination">
+                    <p class="text-base font-sans font-semibold opacity-90 hover:text-[#03258C]">Enjoy the Beauty of
+                        Pakistan Monument</p>
+                    <p class="text-xs opacity-70 hover:text-[#03258C]">Islambad, Pakistan</p>
+                </div>
+
+                <div class="image-item">
+                    <img src="../Velot/Image-2/destination-3.jpg" class="w-[350px] h-[350px] rounded-2xl"
+                        alt="destination">
+                    <p class="text-base font-sans font-semibold opacity-90 hover:text-[#03258C]">Enjoy the Beauty of the
+                        Burj khalifa</p>
+                    <p class="text-xs opacity-70 hover:text-[#03258C]">Skyscrapper in Dubai</p>
+                </div>
+                <div class="image-item">
+                    <img src="../Velot/Image-2/destination-4.jpg" class="w-[350px] h-[350px] rounded-2xl"
+                        alt="destination">
+                    <p class="text-base font-sans font-semibold opacity-90 hover:text-[#03258C]">Enjoy the Beauty of
+                        Milaidhoo</p>
+                    <p class="text-xs opacity-70 hover:text-[#03258C]">Island in the Maldives</p>
+                </div>
+
+                <div class="image-item">
+                    <img src="../Velot/Image-2/destination-5.jpg" class="w-[350px] h-[350px] rounded-2xl"
+                        alt="destination">
+                    <p class="text-base font-sans font-semibold opacity-90 hover:text-[#03258C]">Enjoy the Beauty of the
+                        Ko Tao</p>
+                    <p class="text-xs opacity-70 hover:text-[#03258C]">Island in the Gulf of Thailand</p>
+                </div>
+
+                <div class="image-item">
+                    <img src="../Velot/Image-2/destination-6.jpg" class="w-[350px] h-[350px] rounded-2xl"
+                        alt="destination">
+                    <p class="text-base font-sans font-semibold opacity-90 hover:text-[#03258C]">Enjoy the Beauty of the
+                        Grand Mediciye Mosque</p>
+                    <p class="text-xs opacity-70 hover:text-[#03258C]">Mosque in Instabul, Turkey</p>
+                </div>
+
+                <p class="mx-auto justify-center items-center "><a href="#"
+                        class="py-[15px] px-[20px] bg-[#03258C] text-white rounded-3xl">View all Destination</a></p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-[50px] w-[80%] flex mx-auto items-center  gap-16">
+        <div class="w-[400px]">
+            <img src="../Velot/Image-2/experience-banner.png" alt="banner">
+        </div>
+
+        <div class="">
+            <p class="text-xs opacity-60">Our Experience</p>
+            <h1 class="text-[2.5rem] font-semibold max-w-[400px]">With Our Experience We Will Serve You</h1>
+            <p class="mt-[15px] mx-[0] mb-[30px] text-sm opacity-70">Since we first opened we have always prioritized
+                the convenience of our users by providing low prices and with a easy process.</p>
+
+            <div class="flex gap-6 text-base">
+                <div>
+                    <p class="max-w-[100px] text-sm opacity-70 mb-[10px]"><span
+                            class="text-[#03258C] text-[2rem] font-extrabold">250+</span> Years experience</p>
+                </div>
+
+                <div>
+                    <p class="max-w-[100px] text-sm opacity-70 mb-[10px]"><span
+                            class="text-[#03258C] text-[2rem] font-extrabold">460+</span> Destination Collaboration</p>
+                </div>
+
+                <div>
+                    <p class="max-w-[100px] text-sm opacity-70 mb-[10px]"><span
+                            class="text-[#03258C] text-[2rem] font-extrabold">50k+</span> Happy Customers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-10">
+        <p class="text-sm opacity-60 m-auto text-center">Photo Gallery</p>
+        <h1 class="text-[2rem] font-bold m-auto text-center mb-[15px]">Photo's From Travelers</h1>
+        <div class="image-item-animate  w-[80%] m-auto grid grid-cols-3 gap-4">
+            <img src="../Velot/Image-2/gallery-1.jpg" class="h-[300px] w-[250px] rounded-2xl " alt="gallery-1">
+            <img src="../Velot/Image-2/gallery-2.jpg" class="h-[300px] w-[250px] rounded-2xl " alt="gallery-2">
+            <img src="../Velot/Image-2/gallery-3.jpg" class="h-[300px] w-[250px] rounded-2xl " alt="gallery-3">
+            <img src="../Velot/Image-2/gallery-4.jpg" class="h-[200px] w-[350px] rounded-2xl " alt="gallery-4">
+            <img src="../Velot/Image-2/gallery-5.jpg" class="h-[200px] w-[350px] rounded-2xl " alt="gallery-5">
+            <img src="../Velot/Image-2/gallery-6.jpg" class="h-[200px] w-[350px] rounded-2xl " alt="gallery-6">
+        </div>
+    </section>
+
+    <section class="mt-[50px] w-[80%] bg-[#FACFCE] m-auto h-[400px] rounded-2xl">
+        <div class="flex flex-col items-center justify-center">
+            <h1 class="mt-[80px] text-[2rem] font-semibold max-w-[400px]">Prepare Yourself & Let’s Explore The Beauty Of
+                the World </h1>
+            <p class="mt-[15px] mx-[0] mb-[30px] text-sm opacity-70">We have many special offers especially for you.</p>
+            <button class="py-[15px] px-[20px] bg-[#03258C] text-white rounded-3xl"><a href="#">Get Started</a></button>
+        </div>
+    </section>
+
+    <footer class="bg-[#F2E7DC] text-white py-8 mt-[50px]">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Section 1: About -->
+                <div>
+                    <img src="../Velot/Image-2/logo (1).svg" alt="logo">
+                    <p class="text-[#0D0D0D] text-sm max-w-[200px] mt-[10px] opacity-70">We always make our customer
+                        happy by providing as many choices as possible</p>
+                </div>
+
+                <!-- Section 2: Quick Links -->
+                <div>
+                    <h3 class="text-xl text-[#0D0D0D] font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-[#0D0D0D] hover:text-[#03258C] opacity-70">Home</a></li>
+                        <li><a href="#" class="text-[#0D0D0D] hover:text-[#03258C] opacity-70">Services</a></li>
+                        <li><a href="#" class="text-[#0D0D0D] hover:text-[#03258C] opacity-70">Contact</a></li>
+                        <li><a href="#" class="text-[#0D0D0D] hover:text-[#03258C] opacity-70">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Section 3: Contact -->
+                <div>
+                    <h3 class="text-xl text-[#0D0D0D] font-semibold mb-4">Contact Us</h3>
+                    <p class="text-[#0D0D0D] text-sm opacity-70">Email: travelia@company.com</p>
+                    <p class="text-[#0D0D0D] text-sm opacity-70">Phone: +1 234 567 890</p>
+                </div>
+
+                <!-- Section 4: Follow Us -->
+                <div>
+                    <h3 class="text-xl text-[#0D0D0D] font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4 text-[#0D0D0D]">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom section: Copyright -->
+            <div class="mt-8 border-t border-gray-700 pt-4 text-[#0D0D0D] text-center text-sm">
+                <p>&copy; 2024 Travelia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
